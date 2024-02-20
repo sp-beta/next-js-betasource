@@ -1,4 +1,7 @@
+"use client"
+import React, { useEffect, useState } from "react";
 import Image from "next/image"
+import Link from "next/link";
 //importing images
 import logo from "../../public/img/logo.webp"
 //software dev
@@ -16,15 +19,34 @@ import Cloud from "../../public/img/mega-menu-icon/Cloud-Computing.svg"
 import Edge from "../../public/img/mega-menu-icon/adge-computing.svg"
 import Blockchain from "../../public/img/mega-menu-icon/Blockchain.svg"
 import VRAR from "../../public/img/mega-menu-icon/Virtual-Augmented-Reality.svg"
-//devops
 
-
-//cloud
 
 
 
 function Navbar() {
+    const [isSticky, setIsSticky] = useState(false);
+    const navbarclass = "nav-bar";
+    const bootstrapcontainer = "container-fluid"
+    const transparent = "bg-transparent"
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.pageYOffset > 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
   return (
+    <div className={`${isSticky ? "sticky-top" : ""} ${navbarclass} ${bootstrapcontainer} ${transparent}`}>
     <nav className="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
     <a href="../" className="navbar-brand d-flex align-items-center text-center">
         <Image className="img-fluid" src={logo} alt={"logo"} title="Betasource logo" width={120}/>
@@ -35,7 +57,7 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto">
             <a href="../" className="nav-item nav-link active" aria-current="page">Home</a>
-            <a href="../about.html" className="nav-item nav-link">About</a>
+            <Link href="/about" className="nav-item nav-link">About</Link>
             <div className="nav-item dropdown dropdown-mega position-static">
                 <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
                 <div className="dropdown-menu shadow">
@@ -125,7 +147,7 @@ function Navbar() {
     </div>
 </nav>
 
-
+</div>
 
   )
 }

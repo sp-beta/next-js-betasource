@@ -5,6 +5,7 @@ import BottomToTop from "@/components/bottom-to-top";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import BootstrapClient from "@/components/bootstrapclient";
+import BrandsSlider from "@/components/brands-slider";
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         {children}
         <BootstrapClient/>
         <Footer/>
+        <BrandsSlider/>
         <BottomToTop/>
         </body>
     </html>
