@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 //importing images
 import logo from "../../public/img/logo.webp"
 //software dev
@@ -20,10 +21,8 @@ import Edge from "../../public/img/mega-menu-icon/adge-computing.svg"
 import Blockchain from "../../public/img/mega-menu-icon/Blockchain.svg"
 import VRAR from "../../public/img/mega-menu-icon/Virtual-Augmented-Reality.svg"
 
-
-
-
 function Navbar() {
+    const pathname = usePathname();
     const [isSticky, setIsSticky] = useState(false);
     const navbarclass = "nav-bar";
     const bootstrapcontainer = "container-fluid"
@@ -48,16 +47,16 @@ function Navbar() {
   return (
     <div className={`${isSticky ? "sticky-top" : ""} ${navbarclass} ${bootstrapcontainer} ${transparent}`}>
     <nav className="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-    <a href="../" className="navbar-brand d-flex align-items-center text-center">
-        <Image className="img-fluid" src={logo} alt={"logo"} title="Betasource logo" width={120}/>
+    <a href="/" className="navbar-brand d-flex align-items-center text-center">
+        <Image className="img-fluid" src={logo} alt={"logo"} title="Betasource logo" width={170}/>
     </a>
     <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto">
-            <a href="../" className="nav-item nav-link active" aria-current="page">Home</a>
-            <Link href="/about" className="nav-item nav-link">About</Link>
+            <Link href="/"  className= {`nav-item nav-link ${pathname=="/" ? "active-route" : ""}` }>Home</Link>
+            <Link href="/about" className= {`nav-item nav-link ${pathname=="/about" ? "active-route" : ""}` }>About</Link>
             <div className="nav-item dropdown dropdown-mega position-static">
                 <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
                 <div className="dropdown-menu shadow">
@@ -140,9 +139,8 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <a href="../portfolio.html" className="nav-item nav-link">Portfolio</a>
         </div>
-        <a href="../contact.html" className="btn btn-primary my-3 px-3">Contact Us</a>
+        <Link href="/contact" className="btn btn-primary my-3 px-3">Contact Us</Link>
         
     </div>
 </nav>
