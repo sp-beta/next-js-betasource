@@ -1,9 +1,9 @@
-
+import PageHeading from "@/components/pageheading"
 
 function AIMLPortfolio() {
   return (
     <div>
-      <h1>AIMLPortfolio</h1>
+      <PageHeading text="AI/ML Portfolio" category= "Case Studies" categorypath="/case-studies/ai-ml-portfolio"/>
     </div>
   )
 }

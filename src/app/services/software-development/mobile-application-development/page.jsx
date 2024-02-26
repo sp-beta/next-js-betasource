@@ -1,7 +1,9 @@
+import PageHeading from "@/components/pageheading"
+
 function MobileAppDev() {
   return (
     <div>
-      <h1>MobileAppDev</h1>
+     <PageHeading text="Mobile Application Development" category= "Software Development" categorypath="/services/software-development"/>
     </div>
   )
 }

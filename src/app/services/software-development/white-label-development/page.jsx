@@ -1,7 +1,9 @@
+import PageHeading from "@/components/pageheading"
+
 function WhiteLabelDev() {
   return (
     <div>
-      <h1>WhiteLabelDev</h1>
+     <PageHeading text="White Label Development" category= "Software Development" categorypath="/services/software-development"/>
     </div>
   )
 }

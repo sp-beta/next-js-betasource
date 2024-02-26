@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function CloudMigration() {
   return (
     <div>
-      <h1>CloudMigration</h1>
+     <PageHeading text="Cloud Migration" category= "Cloud" categorypath="/services/cloud"/>
     </div>
   )
 }

@@ -1,7 +1,8 @@
+import PageHeading from "@/components/pageheading"
 function HardwareNetworking() {
     return (
       <div>
-        <h1>HardwareNetworking</h1>
+       <PageHeading text="Hardware & Networking" category= "Case Studies" categorypath="/case-studies/hardware&networking"/>
       </div>
     )
   }

@@ -1,9 +1,10 @@
+import PageHeading from "@/components/pageheading"
 
 
 function CyberSecurity() {
   return (
     <div>
-      <h1>CyberSecurity</h1>
+     <PageHeading text="Cyber Security" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }

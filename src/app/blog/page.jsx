@@ -1,11 +1,11 @@
-import React from 'react'
+import PageHeading from '@/components/pageheading'
 
 function Blog() {
   return (
     <div>
-      <h1>this is BLog pAGE</h1>
+    <PageHeading text="Career" category= "Home" categorypath="/"/>
     </div>
   )
 }
 
-export default Blog
+export default Blog;

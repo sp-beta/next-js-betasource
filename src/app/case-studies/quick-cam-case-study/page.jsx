@@ -1,7 +1,8 @@
+import PageHeading from "@/components/pageheading"
 function QuickCam() {
   return (
     <div>
-      <h1>QuickCam</h1>
+     <PageHeading text="QuickCam-Case Study" category= "Case Studies" categorypath="/case-studies/quick-cam-case-study"/>
     </div>
   )
 }

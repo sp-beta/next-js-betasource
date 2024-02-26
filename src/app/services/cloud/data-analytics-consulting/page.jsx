@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function DataAnalytics() {
   return (
     <div>
-      <h1>DataAnalytics</h1>
+     <PageHeading text="Data Analytics" category= "Cloud" categorypath="/services/cloud"/>
     </div>
   )
 }

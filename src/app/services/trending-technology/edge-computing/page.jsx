@@ -1,7 +1,9 @@
+import PageHeading from "@/components/pageheading"
+
 function EdgeComputing() {
   return (
     <div>
-      <h1>EdgeComputing</h1>
+           <PageHeading text="Edge Computing" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }

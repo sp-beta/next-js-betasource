@@ -1,10 +1,12 @@
+import PageHeading from "@/components/pageheading"
 
 function IotCaseStudy() {
   return (
     <div>
-      <h1>IotCaseStudy</h1>
+       <PageHeading text="Internet Of Things-Case Study" category= "Case Studies" categorypath="/case-studies/iot-case-study"/>
     </div>
   )
 }
 
 export default IotCaseStudy
+ 

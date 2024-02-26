@@ -1,9 +1,10 @@
+import PageHeading from "@/components/pageheading"
 
 
 function Blockchain() {
   return (
     <div>
-      <h1>Blockchain</h1>
+     <PageHeading text="Blockchain" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }

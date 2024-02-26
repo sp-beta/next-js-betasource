@@ -1,7 +1,8 @@
+import PageHeading from "@/components/pageheading"
 function CyberSecurity() {
     return (
       <div>
-        <h1>CyberSecurity</h1>
+       <PageHeading text="Cyber Security" category= "Case Studies" categorypath="/case-studies/cyber-security"/>
       </div>
     )
   }

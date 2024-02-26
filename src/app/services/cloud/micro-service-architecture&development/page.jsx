@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function MicroServiceArchitecture() {
   return (
     <div>
-      <h1>MicroServiceArchitecture</h1>
+     <PageHeading text="Micro Service Architecture & Development" category= "Cloud" categorypath="/services/cloud"/>
     </div>
   )
 }

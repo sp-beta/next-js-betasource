@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function CloudArchitecture() {
   return (
     <div>
-      <h1>CloudArchitecture</h1>
+     <PageHeading text="Cloud Architecture Design" category= "Cloud" categorypath="/services/cloud"/>
     </div>
   )
 }

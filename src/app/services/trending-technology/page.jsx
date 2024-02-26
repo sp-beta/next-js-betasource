@@ -1,11 +1,11 @@
-
+import PageHeading from "@/components/pageheading"
 
 function TrendingTech() {
   return (
     <div>
-      <h1>trending tech</h1>
+    <PageHeading text="Trending Technology Services" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }
 
-export default TrendingTech
+export default TrendingTech;

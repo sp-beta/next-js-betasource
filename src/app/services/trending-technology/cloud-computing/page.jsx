@@ -1,9 +1,10 @@
+import PageHeading from "@/components/pageheading"
 
 
 function CloudComputing() {
   return (
     <div>
-      <h1>CloudComputing</h1>
+     <PageHeading text="Cloud Computing" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }

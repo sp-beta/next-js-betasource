@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from '@/components/pageheading'
 
 function ContainerizationOrchestration() {
   return (
     <div>
-      <h1>ContainerizationOrchestration</h1>
+     <PageHeading text="Containerization & Orchestration" category= "Devops" categorypath="/services/devops"/>
     </div>
   )
 }

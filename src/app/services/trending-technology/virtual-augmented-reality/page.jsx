@@ -1,11 +1,12 @@
+import PageHeading from "@/components/pageheading";
 
 
 function VirtualAugmented() {
   return (
     <div>
-      <h1>VirtualAugmented</h1>
+    <PageHeading text="Virtual Reality/Augmented Reality" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }
 
-export default VirtualAugmented
+export default VirtualAugmented;

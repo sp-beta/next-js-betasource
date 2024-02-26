@@ -1,9 +1,10 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function CICD() {
   return (
     <div>
-      <h1>CICD</h1>
+     <PageHeading text="CI-CD Services" category= "Devops" categorypath="/services/devops"/>
+
     </div>
   )
 }

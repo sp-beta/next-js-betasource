@@ -1,11 +1,11 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading";
 
 function Career() {
   return (
     <div>
-      <h1>Career</h1>
+      <PageHeading text="Career" category="Home" categorypath="/" />
     </div>
-  )
+  );
 }
 
-export default Career
+export default Career;

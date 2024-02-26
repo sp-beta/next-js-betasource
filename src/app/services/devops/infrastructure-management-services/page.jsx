@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from '@/components/pageheading';
 
 function InfrastructureManagementServices() {
   return (
     <div>
-      <h1>InfrastructureManagementServices</h1>
+     <PageHeading text="Infrastructure Management Services" category= "Devops" categorypath="/services/devops"/>
     </div>
   )
 }

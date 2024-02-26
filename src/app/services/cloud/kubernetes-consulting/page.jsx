@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function KubernetesConsulting() {
   return (
     <div>
-      <h1>KubernetesConsulting</h1>
+     <PageHeading text="Kubernetes Consulting" category= "Cloud" categorypath="/services/cloud"/>
     </div>
   )
 }

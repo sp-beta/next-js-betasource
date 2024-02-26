@@ -178,8 +178,8 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="row d-flex align-items-center justify-content-center">
-            <div className="col-sm-2">
+          <div className="footerphotos d-flex align-items-center justify-content-center">
+            <div>
               <Link
                 href="https://www.appfutura.com/software-development-companies/india/gujarat/ahmedabad/c/cvwx"
                 target="_blank"
@@ -189,7 +189,7 @@ function Footer() {
                 <Image src={appfutura} alt="appfutura" />
               </Link>
             </div>
-            <div className="col-sm-2">
+            <div>
               <Link
                 href="https://clutch.co/profile/betasourcetech"
                 target="_blank"
@@ -199,7 +199,7 @@ function Footer() {
                 <Image src={clutch} alt="Clutch" />
               </Link>
             </div>
-            <div className="col-sm-2">
+            <div>
               <Link
                 href="https://www.guru.com/freelancers/betasourcetech"
                 target="_blank"

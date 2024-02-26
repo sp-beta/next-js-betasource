@@ -1,7 +1,9 @@
+import PageHeading from "@/components/pageheading"
+
 function AIMLDev() {
   return (
     <div>
-      <h1>AIMLDev</h1>
+     <PageHeading text="AI/ML development" category= "Software Development" categorypath="/services/software-development"/>
     </div>
   )
 }

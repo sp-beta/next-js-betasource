@@ -1,7 +1,9 @@
+import PageHeading from "@/components/pageheading"
+
 function API() {
   return (
     <div>
-      <h1>API</h1>
+     <PageHeading text="API Integration" category= "Software Development" categorypath="/services/software-development"/>
     </div>
   )
 }

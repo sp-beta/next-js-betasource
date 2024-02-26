@@ -1,4 +1,3 @@
-import React from 'react'
 import Homeslider from '@/components/homeslider'
 function Home() {
   return (

@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from '@/components/pageheading'
 
 function Devops() {
   return (
     <div>
-      <h1>Devops</h1>
+     <PageHeading text="Devops Services" category= "Devops" categorypath="/services/devops"/>
     </div>
   )
 }

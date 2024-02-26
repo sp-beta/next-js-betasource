@@ -1,7 +1,9 @@
+import PageHeading from "@/components/pageheading"
+
 function Portfolio() {
   return (
     <div>
-      <h1>this is Portfolio</h1>
+    <PageHeading text="Portfolio" category= "Home" categorypath="/"/>
     </div>
   )
 }

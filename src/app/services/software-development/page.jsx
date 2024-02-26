@@ -1,7 +1,10 @@
+import PageHeading from "@/components/pageheading"
+
 function SoftwareDev() {
   return (
     <div>
-      <h1>this is software - development page</h1>
+         <PageHeading text="Software Development Services" category= "Software Development" categorypath="/services/software-development"/>
+
     </div>
   )
 }

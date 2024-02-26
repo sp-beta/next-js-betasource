@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from "@/components/pageheading"
 
 function ServerlessApp() {
   return (
     <div>
-      <h1>ServerlessApp</h1>
+     <PageHeading text="Serverless App Development" category= "Cloud" categorypath="/services/cloud"/>
     </div>
   )
 }

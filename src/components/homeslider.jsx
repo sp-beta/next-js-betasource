@@ -26,7 +26,7 @@ function Homeslider() {
       <Slider {...settings} className="carousel-inner">
         <div className="carousel-item">
           <div className="fill">
-          <div className="image-overlay"></div>
+            <div className="image-overlay"></div>
             <Image
               src={AI}
               alt="AI/ML"
@@ -37,16 +37,18 @@ function Homeslider() {
             <h1 className="wow slideInRight" data-wow-delay="0s">
               AI / ML
             </h1>
-            <h2 className="wow fadeInUpBig" data-wow-delay="2s">
+            <h3 className="wow fadeInUpBig" data-wow-delay="2s">
               Empowering your business with AI/ML intelligence
-            </h2>
-            <CommonButton href="/case-studies/ai-ml-portfolio" text="Read More"/>
-            
+            </h3>
+            <CommonButton
+              href="/case-studies/ai-ml-portfolio"
+              text="Learn More"
+            />
           </div>
         </div>
         <div className="carousel-item">
           <div className="fill">
-          <div className="image-overlay"></div>
+            <div className="image-overlay"></div>
             <Image
               src={IOT}
               alt="Internet Of Things"
@@ -60,12 +62,15 @@ function Homeslider() {
             <h3 className="wow fadeInUpBig" data-wow-delay="2s">
               Connecting everything, everywhere with IoT innovation
             </h3>
-            <CommonButton href="/case-studies/iot-case-study" text="Read More"/>
+            <CommonButton
+              href="/case-studies/iot-case-study"
+              text="Learn More"
+            />
           </div>
         </div>
         <div className="carousel-item">
           <div className="fill">
-          <div className="image-overlay"></div>
+            <div className="image-overlay"></div>
             <Image src={Devops} alt="DevOps" title="DevOps" />
           </div>
           <div className="carousel-caption">
@@ -79,12 +84,12 @@ function Homeslider() {
               Accelerating your digital transformation with round-the-clock
               DevOps
             </h3>
-            <CommonButton href="/devops" text="Read More"/>
+            <CommonButton href="/services/devops" text="Learn More" />
           </div>
         </div>
         <div className="carousel-item">
           <div className="fill">
-          <div className="image-overlay"></div>
+            <div className="image-overlay"></div>
             <Image
               src={Hardware}
               alt="Hardware & Networking"
@@ -100,12 +105,15 @@ function Homeslider() {
               Your one-stop-shop for 24/7 Networking and Hardware helpdesk
               solutions
             </h3>
-            <CommonButton href="/case-studies/hardware&networking" text="Read More"/>
+            <CommonButton
+              href="/case-studies/hardware&networking"
+              text="Learn More"
+            />
           </div>
         </div>
         <div className="carousel-item">
           <div className="fill">
-          <div className="image-overlay"></div>
+            <div className="image-overlay"></div>
             <Image
               src={CyberSecurity}
               alt="Cyber Security"
@@ -120,12 +128,15 @@ function Homeslider() {
             <h3 className="wow fadeInUpBig" data-wow-delay="2s">
               Your data is your power, and it needs to be protected
             </h3>
-            <CommonButton href="/case-studies/cyber-security" text="Read More"/>
+            <CommonButton
+              href="/case-studies/cyber-security"
+              text="Learn More"
+            />
           </div>
         </div>
         <div className="carousel-item">
           <div className="fill">
-          <div className="image-overlay"></div>
+            <div className="image-overlay"></div>
             <Image src={Blockchain} alt="Blockchain" title="Blockchain" />
           </div>
           <div className="carousel-caption">
@@ -135,7 +146,10 @@ function Homeslider() {
             <h3 className="wow fadeInUpBig" data-wow-delay="2s">
               Your Vision, Our Blockchain Expertise
             </h3>
-            <CommonButton href="/trending-technology/blockchain" text="Read More"/>
+            <CommonButton
+              href="/services/trending-technology/blockchain"
+              text="Learn More"
+            />
           </div>
         </div>
       </Slider>

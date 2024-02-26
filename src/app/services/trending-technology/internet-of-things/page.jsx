@@ -1,9 +1,10 @@
+import PageHeading from "@/components/pageheading"
 
 
 function InternetOfThings() {
   return (
     <div>
-      <h1>InternetOfThings</h1>
+           <PageHeading text="Internet Of Things" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }

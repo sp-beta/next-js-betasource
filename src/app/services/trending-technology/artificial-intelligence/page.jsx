@@ -1,9 +1,9 @@
-
+import PageHeading from "@/components/pageheading";
 
 function AI() {
   return (
     <div>
-      <h1>AI</h1>
+     <PageHeading text="Artificial Intelligence" category= "Trending Technology" categorypath="/services/trending-technology"/>
     </div>
   )
 }

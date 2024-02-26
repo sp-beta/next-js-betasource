@@ -1,9 +1,9 @@
-import React from 'react'
+import PageHeading from '@/components/pageheading'
 
 function InfrastructureAsCode() {
   return (
     <div>
-      <h1>InfrastructureAsCode</h1>
+     <PageHeading text="Infrastructure As Code" category= "Devops" categorypath="/services/devops"/>
     </div>
   )
 }
