@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -38,11 +39,8 @@ import quickcam from "../../public/mega-menu-icon/quickcam.webp";
 
 function Navbar() {
   const pathname = usePathname();
+  const dropdownRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
-
-  const navbarclass = "nav-bar";
-  const bootstrapcontainer = "container-fluid";
-  const transparent = "bg-transparent";
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 0) {
@@ -59,11 +57,17 @@ function Navbar() {
     };
   }, []);
 
+  const handleDropdownItemClick = () => {
+    const dropdownMenu = dropdownRef.current;
+    if (dropdownMenu && dropdownMenu.classList.contains("show")) {
+      dropdownMenu.classList.remove("show");
+    }
+  };
   return (
     <div
       className={`${
         isSticky ? "sticky-top" : ""
-      } ${navbarclass} ${bootstrapcontainer} ${transparent}`}
+      } nav-bar container-fluid bg-transparent `}
     >
       <nav className="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
         <Link
@@ -86,13 +90,18 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div
+          className="collapse navbar-collapse"
+          ref={dropdownRef}
+          id="navbarCollapse"
+        >
           <div className="navbar-nav ms-auto">
             <Link
               href="/"
               className={`nav-item nav-link ${
                 pathname == "/" ? "active-route" : ""
               }`}
+              onClick={handleDropdownItemClick}
             >
               Home
             </Link>
@@ -101,6 +110,7 @@ function Navbar() {
               className={`nav-item nav-link ${
                 pathname == "/about" ? "active-route" : ""
               }`}
+              onClick={handleDropdownItemClick}
             >
               About
             </Link>
@@ -109,11 +119,10 @@ function Navbar() {
                 className="nav-link dropdown-toggle"
                 href="#"
                 data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
               >
                 Services
               </Link>
-              <div className={`dropdown-menu shadow`}>
+              <div className="dropdown-menu shadow">
                 <div className="mega-content p-4">
                   <div className="container-fluid">
                     <div className="row">
@@ -121,6 +130,7 @@ function Navbar() {
                         <Link
                           href="/services/software-development"
                           className="dropdown-item"
+                          onClick={handleDropdownItemClick}
                         >
                           Software Development
                         </Link>
@@ -128,6 +138,7 @@ function Navbar() {
                           <Link
                             className="list-group-item"
                             href="/services/software-development/custom-software-development"
+                            onClick={handleDropdownItemClick}
                           >
                             <Image
                               src={customsoftware}
@@ -137,6 +148,7 @@ function Navbar() {
                             Custom Software Development
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/software-development/mobile-application-development"
                           >
@@ -148,6 +160,7 @@ function Navbar() {
                             Mobile Application Development
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/software-development/white-label-development"
                           >
@@ -159,6 +172,7 @@ function Navbar() {
                             White Label Development
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/software-development/software-product-development"
                           >
@@ -171,6 +185,7 @@ function Navbar() {
                           </Link>
                           <Link
                             className="list-group-item"
+                            onClick={handleDropdownItemClick}
                             href="/services/software-development/ai-ml-development"
                           >
                             <Image
@@ -181,6 +196,7 @@ function Navbar() {
                             AI/ML Development
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/software-development/api-integration"
                           >
@@ -197,12 +213,14 @@ function Navbar() {
                         <Link
                           href="/services/trending-technology"
                           className="dropdown-item"
+                          onClick={handleDropdownItemClick}
                         >
                           Trending Technology
                         </Link>
                         <div className="list-group">
                           <Link
                             className="list-group-item"
+                            onClick={handleDropdownItemClick}
                             href="/services/trending-technology/artificial-intelligence"
                           >
                             <Image
@@ -213,6 +231,7 @@ function Navbar() {
                             Artificial Intelligence (AI)
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/trending-technology/internet-of-things"
                           >
@@ -224,6 +243,7 @@ function Navbar() {
                             Internet of Things (IoT)
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/trending-technology/cybersecurity"
                           >
@@ -235,6 +255,7 @@ function Navbar() {
                             Cybersecurity
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/trending-technology/cloud-computing"
                           >
@@ -246,6 +267,7 @@ function Navbar() {
                             Cloud Computing
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/trending-technology/edge-computing"
                           >
@@ -257,6 +279,7 @@ function Navbar() {
                             Edge Computing
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/trending-technology/blockchain"
                           >
@@ -272,6 +295,7 @@ function Navbar() {
                             href="/services/trending-technology/virtual-augmented-reality"
                           >
                             <Image
+                              onClick={handleDropdownItemClick}
                               src={VRAR}
                               alt="Trending Technology"
                               title="Trending Technology"
@@ -280,13 +304,17 @@ function Navbar() {
                           </Link>
                         </div>
                       </div>
-
                       <div className="col-12 col-sm-4 col-lg-3 col-md-6">
-                        <Link href="/services/devops" className="dropdown-item">
+                        <Link
+                          href="/services/devops"
+                          className="dropdown-item"
+                          onClick={handleDropdownItemClick}
+                        >
                           DevOps
                         </Link>
                         <div className="list-group">
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/devops/devops-consulting"
                           >
@@ -294,6 +322,7 @@ function Navbar() {
                             DevOps Consulting
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/devops/ci-cd-services"
                           >
@@ -301,6 +330,7 @@ function Navbar() {
                             CI/CD
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/devops/containerization-orchestration"
                           >
@@ -308,6 +338,7 @@ function Navbar() {
                             Containerization and Orchestration
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/devops/infrastructure-management-services"
                           >
@@ -315,6 +346,7 @@ function Navbar() {
                             Infrastructure Management
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/devops/infrastructure-as-code"
                           >
@@ -328,11 +360,16 @@ function Navbar() {
                         </div>
                       </div>
                       <div className="col-12 col-sm-4 col-lg-3 col-md-6">
-                        <Link href="/services/cloud" className="dropdown-item">
+                        <Link
+                          href="/services/cloud"
+                          className="dropdown-item"
+                          onClick={handleDropdownItemClick}
+                        >
                           Cloud Services
                         </Link>
                         <div className="list-group">
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/cloud-consulting"
                           >
@@ -344,6 +381,7 @@ function Navbar() {
                             Cloud Consulting
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/kubernetes-consulting"
                           >
@@ -355,6 +393,7 @@ function Navbar() {
                             Kubernetes Consulting
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/data-analytics-consulting"
                           >
@@ -366,6 +405,7 @@ function Navbar() {
                             Data Analytics Consulting
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/cloud-assessment&cost-optimization"
                           >
@@ -377,6 +417,7 @@ function Navbar() {
                             Cloud Assessment and Cost Optimization
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/cloud-architecture-design"
                           >
@@ -388,6 +429,7 @@ function Navbar() {
                             Cloud Architecture Design
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/micro-service-architecture&development"
                           >
@@ -399,6 +441,7 @@ function Navbar() {
                             Micro-Service Architecture and Development
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/serverless-app-development"
                           >
@@ -410,6 +453,7 @@ function Navbar() {
                             Serverless App Development
                           </Link>
                           <Link
+                            onClick={handleDropdownItemClick}
                             className="list-group-item"
                             href="/services/cloud/cloud-migration"
                           >
@@ -432,11 +476,10 @@ function Navbar() {
                 className="nav-link dropdown-toggle"
                 href="#"
                 data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
               >
                 Case Studies
               </Link>
-              <div className={`dropdown-menu shadow`}>
+              <div className="dropdown-menu shadow">
                 <div className="mega-content p-4">
                   <div className="container-fluid">
                     <div className="row">
@@ -444,6 +487,7 @@ function Navbar() {
                         <Link
                           href="/case-studies/quick-cam-case-study"
                           className="dropdown-item industries-dropdwn-box"
+                          onClick={handleDropdownItemClick}
                         >
                           <Image
                             src={quickcam}
@@ -455,6 +499,7 @@ function Navbar() {
                       </div>
                       <div className="col-12 col-sm-6 col-md-4">
                         <Link
+                          onClick={handleDropdownItemClick}
                           href="/case-studies/iot-case-study"
                           className="dropdown-item industries-dropdwn-box"
                         >
@@ -468,7 +513,11 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <Link href="/contact" className="btn btn-primary my-3 px-3">
+          <Link
+            href="/contact"
+            className="btn btn-primary my-3 px-3"
+            onClick={handleDropdownItemClick}
+          >
             Contact Us
           </Link>
         </div>

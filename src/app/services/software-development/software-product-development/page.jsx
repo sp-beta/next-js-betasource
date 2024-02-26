@@ -2,9 +2,13 @@ import PageHeading from "@/components/pageheading"
 function SoftwareProductDev() {
   return (
     <div>
-     <PageHeading text="Mobile Application Development" category= "Software Development" categorypath="/services/software-development"/>
+      <PageHeading
+        text="Software Product Development"
+        category="Software Product Development"
+        categorypath="/services/software-development"
+      />
     </div>
-  )
+  );
 }
 
-export default SoftwareProductDev
+export default SoftwareProductDev;
