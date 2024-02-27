@@ -1,0 +1,25 @@
+{
+    "description": "Get Your Questions Answered: BetaSource FAQ Has Got You Covered.",
+    "queanslist": [
+      {
+        "id": "One",
+        "question": "How long does it take to develop a mobile app with Betasource?",
+        "answer": "The time it takes to develop a mobile app depends on several factors such as app complexity, features, and platform. Betasource works closely with clients to determine their specific requirements and create a project timeline that meets their needs."
+      },
+      {
+        "id": "Two",
+        "question": "What platforms does Betasource support for app development?",
+        "answer": "Betasource supports both iOS and Android platforms for mobile app development."
+      },
+      {
+        "id": "Three",
+        "question": "Does Betasource provide ongoing maintenance and support for mobile apps?",
+        "answer": "Yes, Betasource provides ongoing maintenance and support for mobile apps to ensure that they are always running smoothly and any issues are addressed in a timely manner."
+      },
+      {
+        "id": "Four",
+        "question": "How does Betasource ensure app security?",
+        "answer": "Betasource takes app security very seriously and implements industry-standard security protocols to ensure that user data is protected. They also conduct regular security audits and testing to identify and address any vulnerabilities."
+      }
+    ]
+  }

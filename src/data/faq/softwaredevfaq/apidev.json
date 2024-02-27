@@ -1,0 +1,29 @@
+{
+    "description": "",
+    
+        "queanslist": [
+          {
+            "id": "One",
+            "question": "What is API integration?",
+            "answer": "API integration connects two or more software applications via their APIs (Application Programming Interfaces). It allows them to communicate with each other and share data and functionality."
+          },
+          {
+            "id": "Two",
+            "question": "What are the benefits of API integration?",
+            "answer": "API integration offers several benefits, including improved productivity, enhanced customer experience, increased efficiency, better data accuracy, and improved communication between systems."
+          },
+          {
+            "id": "Three",
+            "question": "What kind of API integrations does Betasource offer?",
+            "answer": "Betasource offers a wide range of API integrations, including CRM integrations, payment gateway integrations, social media integrations, marketing automation integrations, and e-commerce integrations."
+          },
+          {
+            "id": "Four",
+            "question": "How long does the API integration process take?",
+            "answer": "The time it takes to complete an API integration project depends on the complexity of the integration, the number of systems being integrated, and the availability of APIs. Betasource works closely with clients to estimate the timeline for each project."
+          }
+        ]
+      
+      
+  }
+  

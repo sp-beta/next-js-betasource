@@ -1,0 +1,35 @@
+{
+  "description": "Betasource is a technology company offering a range of services, including software development, testing, DevOps, cloud services, and 24/7 support. To help clients understand our services and how they can benefit, we have created a comprehensive FAQ page that answers common questions about our company and services.",
+  "queanslist": [
+    {
+      "id": "One",
+      "question": "What services does Betasource offer?",
+      "answer": "Betasource offers a range of services, including software development, software testing, DevOps, cloud services and New Technologies development."
+    },
+    {
+      "id": "Two",
+      "question": "What is the pricing model for Betasource's services?",
+      "answer": "Betasource team will work with you to understand your budget and goals and to find a pricing model that works for you."
+    },
+    {
+      "id": "Three",
+      "question": "Does Betasource offer custom solutions?",
+      "answer": "Yes, Betasource offers customized solutions to meet each client's specific needs."
+    },
+    {
+      "id": "Four",
+      "question": "What industries does Betasource serve?",
+      "answer": "Betasource serves a range of industries,including technology, finance, healthcare, and retail."
+    },
+    {
+      "id": "Five",
+      "question": "How does Betasource ensure the security of client data?",
+      "answer": "Betasource Takes the security of client data very seriously and implements a range of security measures to ensure confidentiality."
+    },
+    {
+      "id": "Six",
+      "question": "What makes Betasource different from other technology companies?",
+      "answer": "Experts stay up-to-date with the latest technologies and trends to provide our clients with the best possible solutions."
+    }
+  ]
+}

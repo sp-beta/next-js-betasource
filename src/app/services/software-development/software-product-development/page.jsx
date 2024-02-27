@@ -1,4 +1,6 @@
 import PageHeading from "@/components/pageheading"
+import FAQ from "@/components/faq";
+import faqData from "../../../../data/faq/softwaredevfaq/softwareproductdev.json";
 function SoftwareProductDev() {
   return (
     <div>
@@ -7,6 +9,7 @@ function SoftwareProductDev() {
         category="Software Product Development"
         categorypath="/services/software-development"
       />
+      <FAQ faqData={faqData} />
     </div>
   );
 }

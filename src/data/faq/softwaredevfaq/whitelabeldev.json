@@ -1,0 +1,29 @@
+{
+    "description": "",
+    
+        "queanslist": [
+          {
+            "id": "One",
+            "question": "What is white-label development?",
+            "answer": "White label development is a type of outsourcing service where a company provides customized software solutions and services to other companies that can be rebranded and sold under their brand name."
+          },
+          {
+            "id": "Two",
+            "question": "What are the benefits of white-label development?",
+            "answer": "White-label development allows companies to expand their product or service offerings without investing in additional resources or hiring new staff. It also allows for faster time-to-market and reduced development costs."
+          },
+          {
+            "id": "Three",
+            "question": "What types of services does Betasource offer for white-label development?",
+            "answer": "Betasource offers a wide range of services for white-label development, including software development, web development, mobile app development, and cloud services."
+          },
+          {
+            "id": "Four",
+            "question": "Can Betasource provide custom branding for white-label solutions?",
+            "answer": "Betasource can provide custom branding for white-label solutions, including custom logos, color schemes, and other branding elements."
+          }
+        ]
+      }
+      
+  
+  

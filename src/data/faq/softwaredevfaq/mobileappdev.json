@@ -1,0 +1,29 @@
+{
+    "description": "",
+    
+        "queanslist": [
+          {
+            "id": "One",
+            "question": "What types of mobile apps does Betasource develop?",
+            "answer": "Betasource develops mobile apps for both iOS and Android platforms. They have experience designing different mobile apps, such as e-commerce, social media, healthcare, and more."
+          },
+          {
+            "id": "Two",
+            "question": "How much does Betasource charge for mobile app development?",
+            "answer": "The cost of mobile app development depends on various factors such as complexity, features, design, and platform. Betasource provides custom quotes based on the specific requirements of each project."
+          },
+          {
+            "id": "Three",
+            "question": "What is the process of mobile app development at Betasource?",
+            "answer": "The process of mobile app development at Betasource includes ideation, prototyping, design, development, testing, and deployment. The team follows an agile development methodology to ensure a smooth and efficient product."
+          },
+          {
+            "id": "Four",
+            "question": "Can Betasource help with app maintenance and updates?",
+            "answer": "Betasource provides ongoing support and maintenance services to ensure that the app runs smoothly and is up to date with the latest technology and security standards."
+          }
+        ]
+      }
+      
+  
+  

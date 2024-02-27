@@ -1,0 +1,26 @@
+{
+    "description": "Get Your Questions Answered: BetaSource FAQ Has Got You Covered.",
+    "queanslist": [
+      {
+        "id": "One",
+        "question": "What is IoT?",
+        "answer": "IoT stands for the Internet of Things, which refers to the inter connectivity of physical devices, machines, and systems through the internet."
+      },
+      {
+        "id": "Two",
+        "question": "How can IoT benefit my business?",
+        "answer": "IoT can benefit your business by improving operational efficiency, reducing costs, increasing productivity, enhancing customer experiences, and providing real-time insights into business processes."
+      },
+      {
+        "id": "Three",
+        "question": "What IoT services does Betasource Offer?",
+        "answer": "Betasource offers a comprehensive range of IoT services, including IoT development, real-time problem fixing, software testing, maintenance and support, and 24/7 hour support."
+      },
+      {
+        "id": "Four",
+        "question": "How does Betasource ensure the success of my IoT strategy?",
+        "answer": "Betasource ensures the success of your IoT strategy by working closely with you to define your business goals, designing customized IoT solutions, implementing them, and providing regular maintenance and support services."
+      }
+    ]
+  }
+  

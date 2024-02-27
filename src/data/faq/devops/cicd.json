@@ -1,0 +1,33 @@
+{
+    "description": "",
+      "queanslist": [
+        {
+          "id": "One",
+          "question": "What are BetaSource CI/CD Services?",
+          "answer": "BetaSource CI/CD Services is a set of tools, techniques, and best practices used to simplify and automate the development, testing, and deployment of software applications."
+        },
+        {
+          "id": "Two",
+          "question": "What are the benefits of using BetaSource CI/CD Services?",
+          "answer": "The benefits of using BetaSource CI/CD Services include faster time to market, increased productivity, higher quality software, improved collaboration between development and operations teams, and reduced risk of errors and downtime."
+        },
+        {
+          "id": "Three",
+          "question": "What tools are included in BetaSource CI/CD Services?",
+          "answer": "BetaSource CI/CD Services include a wide range of tools, including continuous integration (CI) servers, version control systems, testing frameworks, code analysis tools, deployment automation tools, and monitoring and logging systems."
+        },
+        {
+          "id": "Four",
+          "question": "Can I use my tools with BetaSource CI/CD Services?",
+          "answer": "You can use your tools with BetaSource CI/CD Services. Our team will work with you to integrate your existing tools into our CI/CD pipeline."
+        },
+        {
+          "id": "Five",
+          "question": "What programming languages and platforms are BetaSource CI/CD Services supported?",
+          "answer": "BetaSource CI/CD Services support various programming languages and platforms, including Java, Python, Node.js, Ruby, .NET, and others."
+        }
+      ]
+    
+    
+  }
+  

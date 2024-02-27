@@ -1,0 +1,28 @@
+{
+    "description": "",
+    
+        "queanslist": [
+          {
+            "id": "One",
+            "question": "What is AL/ML development, and how can it benefit my business?",
+            "answer": "AL/ML development refers to using Artificial Intelligence and Machine Learning to develop applications and systems that can learn from data and improve over time. It can help businesses automate processes, improve efficiency, and provide better insights into their data."
+          },
+          {
+            "id": "Two",
+            "question": "What kind of AL/ML development services does Betasource offer?",
+            "answer": "Betasource offers a wide range of AL/ML development services, including algorithm development, data analysis, model training, deployment, and ongoing support."
+          },
+          {
+            "id": "Three",
+            "question": "What industries can benefit from Betasource's AL/ML development services?",
+            "answer": "Betasource's AL/ML development services can benefit various industries, including healthcare, finance, retail, manufacturing, and transportation."
+          },
+          {
+            "id": "Four",
+            "question": "What data do I need to provide for AL/ML development?",
+            "answer": "Betasource's team will work with you to identify the data sources needed for your specific use case. The data can include structured or unstructured data, which will help you ensure that the data is clean and suitable for the model."
+          }
+        ]
+      
+  }
+  

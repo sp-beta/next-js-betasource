@@ -1,0 +1,33 @@
+{
+  "description": "",
+  
+    "queanslist": [
+      {
+        "id": "One",
+        "question": "What is Infrastructure as Code (IaC)?",
+        "answer": "Infrastructure as Code (IaC) manages and provides infrastructure resources using code instead of manual processes. It helps organizations automate infrastructure provisioning and deployment, which helps in reducing human errors and increasing efficiency."
+      },
+      {
+        "id": "Two",
+        "question": "What are the benefits of using IaC services?",
+        "answer": "IaC services help automate infrastructure provisioning and deployment, which helps in reducing human errors, improving efficiency, and lowering costs."
+      },
+      {
+        "id": "Three",
+        "question": "How does BetaSource's IaC service work?",
+        "answer": "BetaSource's IaC service provides a framework for managing infrastructure resources using code. It enables organizations to define their infrastructure in a code format and deploy it using automation tools such as Terraform or AWS CloudFormation."
+      },
+      {
+        "id": "Four",
+        "question": "What platforms does BetaSource's IaC service support?",
+        "answer": "BetaSource's IaC service supports all major cloud platforms, including AWS, Azure, and Google Cloud. It also supports hybrid environments, enabling organizations to manage their on-premise infrastructure using IaC tools."
+      },
+      {
+        "id": "Five",
+        "question": "What are the costs of BetaSource's IaC service?",
+        "answer": "BetaSource's IaC service costs vary depending on the complexity and scale of the infrastructure. The price is determined based on the number of resources managed, the complexity of the infrastructure, and the level of support required. BetaSource provides customized pricing options tailored to the specific needs of each organization."
+      }
+    ]
+  
+  
+}

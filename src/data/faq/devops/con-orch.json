@@ -1,0 +1,39 @@
+{
+    "description": "",
+    
+      "queanslist": [
+        {
+          "id": "One",
+          "question": "What are Betasource Containerization and Orchestration Services?",
+          "answer": "Betasource Containerization and Orchestration Services is a service that helps businesses containerize their applications and manage them using orchestration tools like Kubernetes, Docker Swarm, etc."
+        },
+        {
+          "id": "Two",
+          "question": "What are the benefits of containerization?",
+          "answer": "Containerization provides numerous benefits, such as easy application deployment, portability, scalability, and isolation."
+        },
+        {
+          "id": "Three",
+          "question": "What containerization technologies does Betasource support?",
+          "answer": "Betasource supports many containerization technologies, such as Docker, Kubernetes, Docker Swarm, and OpenShift."
+        },
+        {
+          "id": "Four",
+          "question": "What is the difference between containerization and virtualization?",
+          "answer": "Containerization allows multiple applications to run on a single operating system without affecting each other, whereas virtualization enables running various operating systems on a single physical server."
+        },
+        {
+          "id": "Five",
+          "question": "What is orchestration?",
+          "answer": "Orchestration is managing, scaling, and automating containerized application deployment in a distributed environment."
+        },
+        {
+          "id": "Six",
+          "question": "Does Betasource provide support for multi-cloud orchestration?",
+          "answer": "Betasource offers multi-cloud orchestration services for businesses that run their applications across different cloud platforms."
+        }
+      ]
+    }
+    
+  
+  

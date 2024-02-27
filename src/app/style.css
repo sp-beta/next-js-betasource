@@ -2244,7 +2244,7 @@ video {
 
 /*** FAQ ***/
 .faq-section {
-    /* background: url(../img/faq-bg.webp); */
+    background: url(/faq-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2280,6 +2280,7 @@ video {
     position: relative;
     z-index: 1;
     background-color: transparent;
+    border: none !important;
 }
 
 .faq-section .accordion .accordion-item:before {
@@ -2307,7 +2308,7 @@ video {
     font-size: 18px;
     color: #fff !important;
     padding: 14px 20px 14px 59px;
-    border-radius: 30px;
+    border-radius: 30px !important;
     z-index: 1;
 }
 
@@ -2322,7 +2323,7 @@ video {
     background-color: rgba(255, 255, 255, 0.050980392156862744);
     border: 1px solid #626065;
     padding: 14px 20px 14px 59px;
-    border-radius: 30px;
+    border-radius: 30px !important;
     z-index: 1;
 }
 
@@ -2365,11 +2366,6 @@ video {
     /* background: url(../img/question.png); */
     background-repeat: no-repeat;
     background-position: left;
-}
-
-.faq-section .accordion-item:last-of-type .accordion-button.collapsed {
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
 }
 
 .faq-section .contract-form-bg {
@@ -5107,7 +5103,8 @@ padding-left: 10px !important;
 }
 
 .errorpage .row h1{
-    font-size: 120px;
+    font-size: 100px;
+    margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 992px) {

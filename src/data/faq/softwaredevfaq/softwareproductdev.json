@@ -1,0 +1,29 @@
+{
+    "description": "",
+    
+        "queanslist": [
+          {
+            "id": "One",
+            "question": "How does Betasource ensure the quality of software products?",
+            "answer": "Betasource follows strict quality assurance processes, including unit testing, integration testing, and regression testing. We use tools like Code Climate and SonarCloud to ensure code quality and maintainability."
+          },
+          {
+            "id": "Two",
+            "question": "Does Betasource provide ongoing support and maintenance for software products?",
+            "answer": "Betasource provides ongoing support and maintenance services to ensure that the software product remains up-to-date and secure. We offer regular updates and upgrades to the software product as needed."
+          },
+          {
+            "id": "Three",
+            "question": "What is the typical timeline for software product development?",
+            "answer": "The timeline for software product development varies depending on the project's complexity. However, Betasource typically follows an agile development process that involves regular feedback and collaboration with the client to ensure that the product is developed efficiently and on time."
+          },
+          {
+            "id": "Four",
+            "question": "How much does software product development cost?",
+            "answer": "The cost of software product development varies depending on the scope and complexity of the project. Betasource provides customized quotes based on the client's requirements and budget."
+          }
+        ]
+      
+      
+  }
+  

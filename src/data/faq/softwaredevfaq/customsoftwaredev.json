@@ -1,0 +1,29 @@
+{
+    "description": "",
+    
+        "queanslist": [
+          {
+            "id": "One",
+            "question": "What services does Betasource offer for custom software development?",
+            "answer": "Betasource offers a wide range of services for custom software development, including software design, software development, testing and quality assurance, project management, and ongoing maintenance and support."
+          },
+          {
+            "id": "Two",
+            "question": "How does Betasource ensure that the software developed meets the client's requirements?",
+            "answer": "Betasource has a rigorous process for gathering client requirements, including conducting interviews, performing research, and analyzing existing processes. We keep the client involved and informed throughout the development process to ensure that the software meets their expectations."
+          },
+          {
+            "id": "Three",
+            "question": "What programming languages and technologies does Betasource work with?",
+            "answer": "Betasource has expertise in various programming languages and technologies, including Java, .NET, Python, Ruby on Rails, AngularJS, React, and many others. They can work with the technology that best suits the client's needs."
+          },
+          {
+            "id": "Four",
+            "question": "How long it takes to develop custom software?",
+            "answer": "The time it takes to develop custom software depends on the project's complexity, the development team's size, and the resources available. Betasource works closely with clients to establish realistic timelines and milestones for the project."
+          }
+        ]
+      
+      
+  }
+  

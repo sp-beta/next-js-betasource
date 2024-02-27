@@ -1,0 +1,30 @@
+{
+  "description": "",
+    "queanslist": [
+      {
+        "id": "One",
+        "question": "What are BetaSource Infrastructure Management Services?",
+        "answer": "BetaSource Infrastructure Management Services is a comprehensive set of services that helps businesses manage their IT infrastructure efficiently and cost-effectively. The benefits include server management, network management, security management, backup and disaster recovery, and more."
+      },
+      {
+        "id": "Two",
+        "question": "Who can benefit from BetaSource Infrastructure Management Services?",
+        "answer": "BetaSource Infrastructure Management Services is designed for small and medium-sized businesses that need to manage their IT infrastructure but need more resources or expertise. The services also suit businesses that want to focus on their core operations and leave IT management to experts."
+      },
+      {
+        "id": "Three",
+        "question": "How do BetaSource Infrastructure Management Services work?",
+        "answer": "BetaSource Infrastructure Management Services works by providing businesses with a team of experts who manage their IT infrastructure remotely. The services are tailored to the specific needs of each company and are designed to ensure maximum uptime and security."
+      },
+      {
+        "id": "Four",
+        "question": "What are the benefits of BetaSource Infrastructure Management Services?",
+        "answer": "The benefits of BetaSource Infrastructure Management Services include reduced downtime, improved security, increased efficiency, and cost savings. The services also help businesses stay up-to-date with the latest technologies and ensure compliance with industry regulations."
+      },
+      {
+        "id": "Five",
+        "question": "What is the pricing model for BetaSource Infrastructure Management Services?",
+        "answer": "The pricing model for BetaSource Infrastructure Management Services varies depending on the specific services required by each business. The services can be customized to fit within a business's budget and can be billed monthly, quarterly, or annually."
+      }
+    ]
+}
