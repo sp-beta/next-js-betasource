@@ -424,12 +424,6 @@ h6,
     -webkit-animation: fadeIn 0.3s alternate;
     animation: fadeIn 0.3s alternate;
 }
-.nav-bar .navbar .dropdown-mega:hover .dropdown-menu{
-    visibility: hidden;
-}
-.nav-bar .navbar .dropdown-mega:hover .dropdown-menu.show{
-    visibility: visible ;
-}
 .navbar-nav .nav-item.dropdown.dropdown-mega {
     position: static;
 }
@@ -539,6 +533,7 @@ h6,
 }
 
 @media (min-width: 992px) {
+    
     .navbar .nav-item .dropdown-menu {
         display: block;
         top: 100%;
