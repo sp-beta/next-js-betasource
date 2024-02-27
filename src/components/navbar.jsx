@@ -35,6 +35,9 @@ import Migrating from "../../public/mega-menu-icon/migrating.svg";
 import Microservice from "../../public/mega-menu-icon/microservice.svg";
 //case studies
 import quickcam from "../../public/mega-menu-icon/quickcam.webp";
+//caret dropdown icon
+import { RxCaretDown } from "react-icons/rx";
+
 
 function Navbar() {
   const pathname = usePathname();
@@ -115,11 +118,12 @@ function Navbar() {
             </a>
             <div className="nav-item dropdown dropdown-mega position-static">
               <a
-                className="nav-link dropdown-toggle"
+                className={`nav-link dropdown-toggle ${pathname.includes("/services/") ? "active-route" : ""}`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 Services
+                <span><RxCaretDown /></span>
               </a>
               <div className={`dropdown-menu shadow `}>
                 <div className="mega-content p-4">
@@ -472,11 +476,12 @@ function Navbar() {
             </div>
             <div className="nav-item dropdown dropdown-mega position-static industries-dropdwn">
               <a
-                className="nav-link dropdown-toggle"
+                className={`nav-link dropdown-toggle ${pathname.includes("/case-studies/") ? "active-route" : ""}`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 Case Studies
+            <span><RxCaretDown /></span>     
               </a>
               <div className="dropdown-menu shadow">
                 <div className="mega-content p-4">
@@ -514,7 +519,7 @@ function Navbar() {
           </div>
           <a
             href="/contact"
-            className="btn btn-primary my-3 px-3"
+            className="btn btn-primary my-3 px-3 contact-navbtn"
             onClick={handleDropdownItemClick}
           >
             Contact Us

@@ -203,6 +203,10 @@ h6,
         left: 60px;
     }
 }
+.dropdown span svg{
+    font-size: 25px;
+    padding-bottom: 2px;
+}
 
 .dropdown-item:hover,
 .dropdown-item:active {
@@ -219,17 +223,16 @@ h6,
     font-weight: bold !important;
 }
 .navbar .dropdown-toggle::after {
-    content: "▼" !important;
-    margin-left: 3px !important;
-    margin-bottom: 2px !important;
-    color: #00000075;
+    content: "" !important;
 }
 .first-word-uppercase-p::first-letter {
     font-size: 40px;
     color: var(--secondary);
     font-weight: bold;
 }
-
+.contact-navbtn:hover{
+background-color: var(--secondary) !important;
+}
 
 /*** Button ***/
 .btn {
@@ -307,10 +310,6 @@ h6,
 .rounded-btn img{
    height: 35px;
    width: 35px;
-}
-.rounded-btn button:hover{
-    color: var(--secondary) !important;
-    background: white;
 }
 .rounded-btn a:before {
     position: absolute;
@@ -713,7 +712,6 @@ bottom: 50px !important;
     content: " " !important;
 }
 .carousel-inner{
-    width: 100vw;
     height: 100vh;   
 }
 .carousel-item{
