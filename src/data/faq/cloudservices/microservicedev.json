@@ -1,41 +1,26 @@
 {
-    "description": "",
+    "description": "Get Your Questions Answered: BetaSource FAQ Has Got You Covered.",
   
     "queanslist": [
       {
         "id": "One",
-        "question": "",
-        "answer": ""
+        "question": "What is BetaSource Micro-service Testing?",
+        "answer": "BetaSource Micro-service Testing is a software testing service that focuses on testing micro-services, which are small, independent components of a more significant application."
       },
       {
         "id": "Two",
-        "question": "",
-        "answer": ""
+        "question": "Why is micro-service testing necessary?",
+        "answer": "Micro-service testing is crucial because it helps ensure that each component of the more robust application functions correctly and that the communication between them is seamless."
       },
       {
         "id": "Three",
-        "question": "",
-        "answer": ""
+        "question": "What types of testing are included in BetaSource Micro-service Testing?",
+        "answer": "BetaSource Micro-service Testing includes functional testing, integration testing, performance testing, and security testing."
       },
       {
         "id": "Four",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Five",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Six",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Seven",
-        "question": "",
-        "answer": ""
+        "question": "What programming languages and frameworks are supported by BetaSource Micro-service Testing?",
+        "answer": "BetaSource Micro-service Testing supports various programming languages and frameworks, including Java, .NET, Node.js, Python, and Ruby."
       }
     ]
   }

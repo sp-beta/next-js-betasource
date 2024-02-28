@@ -1,41 +1,26 @@
 {
-    "description": "",
+    "description": "Get Your Questions Answered: BetaSource FAQ Has Got You Covered.",
   
-    "queanslist": [
+    "queanslist":[
       {
         "id": "One",
-        "question": "",
-        "answer": ""
+        "question": "What is cloud migration?",
+        "answer": "Cloud migration moves applications and data from on-premises infrastructure to cloud-based infrastructure."
       },
       {
         "id": "Two",
-        "question": "",
-        "answer": ""
+        "question": "Why should I choose Betasource for cloud migration services?",
+        "answer": "Betasource has a team of experienced cloud migration specialists who can help you migrate your applications and data to the cloud seamlessly and cost-effectively."
       },
       {
         "id": "Three",
-        "question": "",
-        "answer": ""
+        "question": "What types of cloud migration services does Betasource offer?",
+        "answer": "Betasource offers a range of cloud migration services, including lift-and-shift migrations, re-platforming migrations, and application refactoring migrations."
       },
       {
         "id": "Four",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Five",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Six",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Seven",
-        "question": "",
-        "answer": ""
+        "question": "How do I get started with cloud migration services from Betasource?",
+        "answer": "You can contact Betasource to schedule a consultation and discuss your cloud migration needs. They will work with you to develop a customized migration plan that meets your business requirements."
       }
     ]
   }

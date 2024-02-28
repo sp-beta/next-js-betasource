@@ -1,41 +1,31 @@
 {
-    "description": "",
+    "description": "Get Your Questions Answered: BetaSource FAQ Has Got You Covered.",
   
-    "queanslist": [
+    "queanslist":[
       {
         "id": "One",
-        "question": "",
-        "answer": ""
+        "question": "How can BetaSource help with Cost Optimization?",
+        "answer": "Our team will analyze your infrastructure and recommend cost-saving strategies, such as rightsizing, reserved instances, and usage analysis."
       },
       {
         "id": "Two",
-        "question": "",
-        "answer": ""
+        "question": "How long does the Cloud Assessment take?",
+        "answer": "The Cloud Assessment typically takes between two to four weeks, depending on the complexity of your infrastructure."
       },
       {
         "id": "Three",
-        "question": "",
-        "answer": ""
+        "question": "Will the Cloud Assessment affect my infrastructure?",
+        "answer": "No, the Cloud Assessment will not affect your infrastructure in any way. Our team will use read-only access to analyze your infrastructure and will not make any changes to your resources."
       },
       {
         "id": "Four",
-        "question": "",
-        "answer": ""
+        "question": "What type of cloud infrastructures does BetaSource support?",
+        "answer": "BetaSource supports all major cloud infrastructures, including Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform."
       },
       {
         "id": "Five",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Six",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Seven",
-        "question": "",
-        "answer": ""
+        "question": "What if I have questions or need help with the Cloud Assessment?",
+        "answer": "Our team is always available to answer any questions you may have during the Cloud Assessment process."
       }
     ]
   }
