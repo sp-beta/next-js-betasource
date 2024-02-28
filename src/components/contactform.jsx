@@ -38,7 +38,7 @@ function ContactForm() {
       err.user_name = "Please Enter Your Full Name!";
     } else {
       if (formData.user_name.length <= 1) {
-        err.user_name = "Name should be atleast 2 character";
+        err.user_name = "Name should be at least 2 character";
       }
     }
     if (formData.user_email === "") {
@@ -53,14 +53,14 @@ function ContactForm() {
       err.subject = "Please Enter The Subject!";
     } else {
       if (formData.subject.length <= 1) {
-        err.subject = "Please enter Relevent Subject !";
+        err.subject = "Please enter Relevant Subject !";
       }
     }
     if (formData.message === "") {
       err.message = "Please Enter Your Message!";
     } else {
       if (formData.message.length <= 1) {
-        err.message = "Please enter Relevent Message !";
+        err.message = "Please enter Relevant Message !";
       }
     }
 

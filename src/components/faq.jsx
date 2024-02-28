@@ -16,7 +16,7 @@ function FAQ(props) {
                   Frequently Asked <span> Question </span>
                 </h3>
               </div>
-              <p className="text-white">{description}</p>
+              <p className="text-white faq-desc">{description}</p>
             </div>
             <div className="col-lg-12">
               <div
@@ -52,7 +52,23 @@ function FAQ(props) {
                         aria-labelledby={`flush-heading${id}`}
                         data-bs-parent="#tab_container"
                       >
-                        <div className="accordion-body">{answer}</div>
+                        <div className="accordion-body">
+                          {typeof answer === "string" ? (
+                            <p>{answer}</p>
+                          ) : (
+                            <>
+                              <p>{answer.heading ? answer.heading : ""}</p>
+                              <ul>
+                                {answer.list.map((item) => (
+                                  <li key={item.id}>
+                                    <h6>{item.title ? item.title : ""}</h6>
+                                    {item.desc}
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          )}
+                        </div>
                       </div>
                     </div>
                   );

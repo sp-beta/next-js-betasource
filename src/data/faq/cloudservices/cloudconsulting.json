@@ -1,42 +1,50 @@
 {
-    "description": "",
-  
-    "queanslist": [
-      {
-        "id": "One",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Two",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Three",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Four",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Five",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Six",
-        "question": "",
-        "answer": ""
-      },
-      {
-        "id": "Seven",
-        "question": "",
-        "answer": ""
+  "description": "Get Your Questions Answered: BetaSource FAQ Has Got You Covered.",
+
+  "queanslist": [
+    {
+      "id": "One",
+      "question": "Why should I choose Betasource Cloud Consulting?",
+      "answer": "We have a team of experienced cloud consultants who are experts in their fields."
+    },
+    {
+      "id": "Two",
+      "question": "What kind of businesses can benefit from Betasource Cloud Consulting?",
+      "answer": "Any company that takes advantage of the benefits of cloud computing can benefit from our services. We work with companies from various industries, including healthcare, finance, retail, and more."
+    },
+    {
+      "id": "Three",
+      "question": "What are the benefits of migrating to the cloud?",
+      "answer": {
+        "heading" : "Migrating to the cloud can bring numerous benefits to your business, such as :",
+        "list": [
+          {
+            "id": 1,
+            "desc": "Reduced IT infrastructure costs"
+          },
+          {
+            "id": 2,
+            "desc": "Increased scalability and flexibility"
+          },
+          {
+            "id": 3,
+            "desc": "Enhanced data security and compliance"
+          },
+          {
+            "id": 4,
+            "desc": "Improved collaboration and productivity"
+          },
+          {
+            "id": 5,
+            "desc": "Access to new technology and innovation"
+          }
+        ]
       }
-    ]
-  }
-  
+    },
+    {
+      "id": "Four",
+      "question": "How long does the migration process take?",
+      "answer": "The migration process can vary depending on the complexity of your business operations, the size of your data, and the type of cloud services you require."
+    }
+  ]
+}
