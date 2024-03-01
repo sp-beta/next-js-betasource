@@ -1,6 +1,7 @@
 import PageHeading from "@/components/pageheading"
 import FAQ from "@/components/faq";
 import faqData from "../../../../data/faq/cloudservices/kubernetes.json";
+import ServiceLayout from "@/components/servicelayout";
 function KubernetesConsulting() {
   return (
     <div>
@@ -9,6 +10,7 @@ function KubernetesConsulting() {
         category="Cloud"
         categorypath="/services/cloud"
       />
+      <ServiceLayout />
       <FAQ faqData={faqData} />
     </div>
   );

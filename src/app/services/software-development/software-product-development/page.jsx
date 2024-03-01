@@ -1,6 +1,7 @@
 import PageHeading from "@/components/pageheading"
 import FAQ from "@/components/faq";
 import faqData from "../../../../data/faq/softwaredevfaq/softwareproductdev.json";
+import ServiceLayout from "@/components/servicelayout";
 function SoftwareProductDev() {
   return (
     <div>
@@ -9,6 +10,7 @@ function SoftwareProductDev() {
         category="Software Product Development"
         categorypath="/services/software-development"
       />
+      <ServiceLayout />
       <FAQ faqData={faqData} />
     </div>
   );

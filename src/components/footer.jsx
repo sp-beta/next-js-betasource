@@ -8,22 +8,20 @@ import guru from "../../public/footer/guru.png";
 import smalldot from "../../public/footer/small-dot.png";
 import bigdot from "../../public/footer/big-dot.png";
 //icon import
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faPinterest } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 
 import { usePathname } from "next/navigation";
 
 function Footer() {
-  
-    const pathname = usePathname();
-    
+  const pathname = usePathname();
+
   return (
     <div id="footer">
       <div className="container-fluid text-white footer pt-5 mt-5">
@@ -66,30 +64,24 @@ function Footer() {
             <div className="col-lg-4 col-md-6 pl-0">
               <h5 className="text-white mb-4">Get In Touch</h5>
               <p className="mb-2 d-flex">
-                <FontAwesomeIcon
-                  icon={faMapLocationDot}
-                  className="me-3 mt-1"
-                />
+                <FaLocationDot className="me-3 mt-1" />
                 301 Dheeraj Vandana Classic, 24th Main Parangipalya, HSR Layout
                 Sector 2, <br /> Bangalore - 560102
               </p>
               <p className="mb-2 d-flex">
-                <FontAwesomeIcon
-                  icon={faMapLocationDot}
-                  className="me-3 mt-1"
-                />
+                <FaLocationDot className="me-3 mt-1" />
                 A-1602 Privillon, Ambli BRT Road, Iscon Crossroads, Ahmedabad
                 380059, <br /> Gujarat, India
               </p>
               <p className="mb-2">
-                {" "}
-                <FontAwesomeIcon icon={faPhone} className="me-3 mt-1" />
+                <FaPhoneAlt className="me-3 mt-1" />
                 <Link className="text-white" href="tel:+917863889382">
                   +91 786 3889 382
                 </Link>
               </p>
               <p className="mb-2">
-                <FontAwesomeIcon icon={faEnvelope} className="me-3 mt-1" />
+                <MdEmail className="me-3 mt-1" />
+
                 <Link className="text-white" href="mailto:info@betasource.tech">
                   info@betasource.tech
                 </Link>
@@ -97,32 +89,65 @@ function Footer() {
             </div>
             <div className="col-lg-2 col-md-6">
               <h5 className="text-white mb-4">Company</h5>
-              <Link className={`btn btn-link text-white ${pathname== "/" ? "active-route" : " "}`} href="/">
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/" ? "active-route" : " "
+                }`}
+                href="/"
+              >
                 Home
               </Link>
-              <Link className={`btn btn-link text-white ${pathname== "/about" ? "active-route" : " "}`} href="/about">
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/about" ? "active-route" : " "
+                }`}
+                href="/about"
+              >
                 About Us
               </Link>
-              <Link className={`btn btn-link text-white ${pathname== "/contact" ? "active-route" : " "}`} href="/contact">
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/contact" ? "active-route" : " "
+                }`}
+                href="/contact"
+              >
                 Contact Us
               </Link>
             </div>
             <div className="col-lg-3 col-md-6 ps-2">
               <h5 className="text-white mb-4">Services</h5>
-              <Link className={`btn btn-link text-white ${pathname== "/services/devops" ? "active-route" : " "}`}  href="/services/devops">
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/services/devops" ? "active-route" : " "
+                }`}
+                href="/services/devops"
+              >
                 DevOps
               </Link>
-              <Link className={`btn btn-link text-white ${pathname== "/services/cloud" ? "active-route" : " "}`}  href="/services/cloud">
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/services/cloud" ? "active-route" : " "
+                }`}
+                href="/services/cloud"
+              >
                 Cloud Services
               </Link>
               <Link
-                className={`btn btn-link text-white ${pathname== "/services/software-development" ? "active-route" : " "}`} 
+                className={`btn btn-link text-white ${
+                  pathname == "/services/software-development"
+                    ? "active-route"
+                    : " "
+                }`}
                 href="/services/software-development"
               >
                 Software Developmnet
               </Link>
               <Link
-                className={`btn btn-link text-white ${pathname== "/services/trending-technology" ? "active-route" : " "}`} 
+                className={`btn btn-link text-white ${
+                  pathname == "/services/trending-technology"
+                    ? "active-route"
+                    : " "
+                }`}
                 href="/services/trending-technology"
               >
                 Trending Technology
@@ -135,46 +160,53 @@ function Footer() {
                 solutions for businesses of all sizes.
               </p>
               <div className="d-flex pt-2">
-                <Link
-                  className="btn btn-outline-light btn-social"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://twitter.com/BetasourceT"
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </Link>
-                <Link
-                  className="btn btn-outline-light btn-social"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.facebook.com/BetaSource.tech"
-                >
-                  <FontAwesomeIcon icon={faFacebook} />
-                </Link>
-                <Link
-                  className="btn btn-outline-light btn-social"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://in.pinterest.com/Betasourcetech/"
-                >
-                  <FontAwesomeIcon icon={faPinterest} />
-                </Link>
-                <Link
-                  className="btn btn-outline-light btn-social"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.linkedin.com/company/betasourcetech/"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-                <Link
-                  className="btn btn-outline-light btn-social"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.instagram.com/betasource.tech/"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
+                <ul className="footericonlist">
+                  <li className="btn-social">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://twitter.com/BetasourceT"
+                    >
+                      <FaTwitter />
+                    </Link>
+                  </li>
+                  <li className="btn-social">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.facebook.com/BetaSource.tech"
+                    >
+                      <FaFacebookF />
+                    </Link>
+                  </li>
+                  <li className="btn-social">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://in.pinterest.com/Betasourcetech/"
+                    >
+                      <FaPinterestP />
+                    </Link>
+                  </li>
+                  <li className="btn-social">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.linkedin.com/company/betasourcetech/"
+                    >
+                      <FaLinkedin />
+                    </Link>
+                  </li>
+                  <li className="btn-social">
+                    <Link
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.instagram.com/betasource.tech/"
+                    >
+                      <FaInstagram />
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -216,7 +248,6 @@ function Footer() {
               <div className="col-md-12 text-center mb-3 mb-md-0">
                 Copyright &copy; 2023
                 <Link className="border-bottom" href="">
-                 
                   BetaSource
                 </Link>
                 . All rights reserved

@@ -1,6 +1,7 @@
 import PageHeading from "@/components/pageheading"
 import FAQ from "@/components/faq";
 import faqData from "../../../data/faq/trendingtech/trendingtech.json";
+import ServiceLayout from "@/components/servicelayout";
 function TrendingTech() {
   return (
     <div>
@@ -9,6 +10,7 @@ function TrendingTech() {
         category="Trending Technology"
         categorypath="/services/trending-technology"
       />
+      <ServiceLayout />
       <FAQ faqData={faqData} />
     </div>
   );

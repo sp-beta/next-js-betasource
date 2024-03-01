@@ -1,18 +1,17 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLink } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
-import Loader from "../../public/loader.gif"
+import Loader from "../../public/loader.gif";
 import ThankYou from "./thankyou";
 
 function ContactForm() {
- const [showPopUp,setShowPopUp] = useState(false);
+  const [showPopUp, setShowPopUp] = useState(false);
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
@@ -69,22 +68,25 @@ function ContactForm() {
   };
   const handlesubmit = async (e) => {
     e.preventDefault();
-    
+
     let isvalid = validation();
     if (isvalid) {
       setwaitingmessage(true);
-      await fetch("https://sourcing-techs-backend-sjyq.vercel.app/betasource/contact-form-1", {
-        method: "POST",
-        headers: {
-          "content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formData.user_email,
-          name: formData.user_name,
-          subject: formData.subject,
-          message: formData.message,
-        }),
-      })
+      await fetch(
+        "https://sourcing-techs-backend-sjyq.vercel.app/betasource/contact-form-1",
+        {
+          method: "POST",
+          headers: {
+            "content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: formData.user_email,
+            name: formData.user_name,
+            subject: formData.subject,
+            message: formData.message,
+          }),
+        }
+      )
         .then((response) => response.json())
         .then((data) => {
           // Handle the API response data here
@@ -99,9 +101,9 @@ function ContactForm() {
       setFormData({ user_name: "", user_email: "", subject: "", message: "" });
     }
   };
-  const handleClose = ()=>{
+  const handleClose = () => {
     setShowPopUp(false);
-  }
+  };
   return (
     <>
       <div className="container-fluid contactUs-page">
@@ -172,7 +174,17 @@ function ContactForm() {
                         </div>
                         <div className="col-md-12 text-center">
                           <div className="rounded-btn" onClick={handlesubmit}>
-                            <button>{isMessageSent===false && waitingmessage===true ?<Image src={Loader} alt={"Sending Message..."}/>:"Send Message"}</button>
+                            <button>
+                              {isMessageSent === false &&
+                              waitingmessage === true ? (
+                                <Image
+                                  src={Loader}
+                                  alt={"Sending Message..."}
+                                />
+                              ) : (
+                                "Send Message"
+                              )}
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -184,7 +196,7 @@ function ContactForm() {
                     <h3 className="mb-4 mt-md-4">Contact Us</h3>
                     <div className="contactInfo w-100 d-flex align-items-start">
                       <div className="icon d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faMapLocationDot} />
+                        <FaLocationDot />
                       </div>
                       <div className="text ps-3">
                         <p>
@@ -195,7 +207,7 @@ function ContactForm() {
                     </div>
                     <div className="contactInfo w-100 d-flex align-items-start">
                       <div className="icon d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faMapLocationDot} />
+                        <FaLocationDot />
                       </div>
                       <div className="text ps-3">
                         <p>
@@ -206,7 +218,7 @@ function ContactForm() {
                     </div>
                     <div className="contactInfo w-100 d-flex align-items-center">
                       <div className="icon d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faPhone} />
+                        <FaPhoneAlt />
                       </div>
                       <div className="text ps-3">
                         <p>
@@ -216,7 +228,7 @@ function ContactForm() {
                     </div>
                     <div className="contactInfo w-100 d-flex align-items-center">
                       <div className="icon d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faEnvelope} />
+                        <MdEmail />
                       </div>
                       <div className="text ps-3">
                         <p>
@@ -228,7 +240,7 @@ function ContactForm() {
                     </div>
                     <div className="contactInfo w-100 d-flex align-items-center">
                       <div className="icon d-flex align-items-center justify-content-center">
-                        <FontAwesomeIcon icon={faGlobe} />
+                        <FaLink />
                       </div>
                       <div className="text ps-3">
                         <p>
@@ -242,7 +254,11 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        {isMessageSent && showPopUp ? <ThankYou handleClose= {handleClose} /> : ""}
+        {isMessageSent && showPopUp ? (
+          <ThankYou handleClose={handleClose} />
+        ) : (
+          ""
+        )}
       </div>
     </>
   );

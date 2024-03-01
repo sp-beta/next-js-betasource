@@ -14,7 +14,7 @@ function ThankYou(props) {
           <div className="container-fluid py-5">
             <div className="container">
               <div className="row d-flex align-items-center">
-                <div className="col-lg-6 text-center">
+                <div className="col-lg-6 col-md-6 text-center thanks-left">
                   <Image
                     src={thanksimg}
                     className="img-fluid"
@@ -22,7 +22,7 @@ function ThankYou(props) {
                     title="Thanks"
                   />
                 </div>
-                <div className="col-lg-6 text-center">
+                <div className="col-lg-6 col-md-6 text-center thanks-right">
                   <h5>Thanks you for contacting us.</h5>
                   <h6>
                     You will receive an email from us within next 24 hours,

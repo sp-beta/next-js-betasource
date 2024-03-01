@@ -1,6 +1,7 @@
 import PageHeading from "@/components/pageheading"
 import FAQ from "@/components/faq";
 import faqData from "../../../../data/faq/cloudservices/cloudmigration.json";
+import ServiceLayout from "@/components/servicelayout";
 function CloudMigration() {
   return (
     <div>
@@ -9,6 +10,7 @@ function CloudMigration() {
         category="Cloud"
         categorypath="/services/cloud"
       />
+      <ServiceLayout />
       <FAQ faqData={faqData} />
     </div>
   );

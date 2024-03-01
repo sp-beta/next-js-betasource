@@ -1,6 +1,5 @@
 "use client"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FaArrowUp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
 function BottomToTop() {
@@ -30,8 +29,11 @@ function BottomToTop() {
   };
 
   return (
-    <div className= {`bottomtopbtn ${isVisible ? "show" : "hide"}`} onClick={scrollToTop}>
-      <FontAwesomeIcon icon={faArrowUp} />
+    <div
+      className={`bottomtopbtn ${isVisible ? "show" : "hide"}`}
+      onClick={scrollToTop}
+    >
+      <FaArrowUp />
     </div>
   );
 }

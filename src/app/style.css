@@ -4,7 +4,7 @@
     --primary: #594A96;
     --secondary: #00B4BE;
     --light: #EEF9FF;
-    --dark: #0E2E50;
+    --dark: #0E2E50
 }
 body{
     overflow-x: hidden !important;
@@ -85,7 +85,13 @@ h6,
     }
     .service-providing{
     padding: 0px !important;
-        
+    }
+    .rounded-btn a{
+        padding: 5px 20px !important;
+    }
+    .rounded-btn a svg{
+        height: 15px !important;
+        width: 15px !important;
     }
 }
 
@@ -2595,24 +2601,35 @@ padding-left: 10px !important;
     animation: moveleftbounce 3s linear infinite;
 }
 
-.footer .btn.btn-social {
-    margin-right: 5px;
-    width: 35px;
-    height: 35px;
+.footer .footericonlist li{
+   list-style-type: none;
+   height: 40px;
+   width: 40px;
+   border: 1px solid white;
+   border-radius: 50%;
+
+}
+.footer .footericonlist li a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 35px;
-    transition: .3s;
+    color: white;
 }
-
-.footer .btn.btn-social:hover {
+.footer .footericonlist li:hover a {
     color: var(--primary);
     border-color: var(--light);
+    background-color: white;
 }
-
+.footer .footericonlist{
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
@@ -4857,17 +4874,42 @@ padding-left: 10px !important;
 
 
 
+
 /********************************** Tanks you page / 404 ********************************/
+@media only screen and (max-width: 769px) {
+    .thanksPage {
+        width: 90vw; /* Adjust width to fit smaller screens */
+        height: auto; /* Let content determine height */
+        max-height: 90vh;
+    }
+    .thanksPage h5{
+        font-size: 24px !important;
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (max-width: 426px) {
+    .thanksPage {
+        width: 90vw; /* Adjust width to fit smaller screens */
+        padding: 20px; /* Add padding to the container */
+    }
+
+    .thanksPage h5 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
 .thanksPage {
     background-image: url(/thanks.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 600px;
-    height:400px;
+    max-width: 800px;
+    width: 80%;
+    height: auto;
     position: relative;
     border-radius: 20px;
 }
+
 .thanksPage h5{
     font-weight: 600;
     font-size: 30px;
@@ -4897,11 +4939,10 @@ padding-left: 10px !important;
   align-items: center;
   z-index: 999999;
   background-color: #0c0c0cb3;
-  width: 100%;
-  height: 100%;
-  top: 50%;      
-  left: 50%;     
-  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;     
+  left: 0;     
 }
 .errorpage .row{
     padding-top: 150px;
