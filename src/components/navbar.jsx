@@ -66,11 +66,7 @@ function Navbar() {
     }
   };
   return (
-    <div
-      className={`${
-        isSticky ? "sticky-top" : ""
-      } nav-bar container-fluid bg-transparent `}
-    >
+    <div className={`${isSticky ? "sticky-top" : ""} nav-bar bg-transparent `}>
       <nav className="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
         <a
           href="/"
@@ -118,12 +114,16 @@ function Navbar() {
             </a>
             <div className="nav-item dropdown dropdown-mega position-static">
               <a
-                className={`nav-link dropdown-toggle ${pathname.includes("/services/") ? "active-route" : ""}`}
+                className={`nav-link dropdown-toggle ${
+                  pathname.includes("/services/") ? "active-route" : ""
+                }`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 Services
-                <span><RxCaretDown /></span>
+                <span>
+                  <RxCaretDown />
+                </span>
               </a>
               <div className={`dropdown-menu shadow `}>
                 <div className="mega-content p-4">
@@ -476,12 +476,16 @@ function Navbar() {
             </div>
             <div className="nav-item dropdown dropdown-mega position-static industries-dropdwn">
               <a
-                className={`nav-link dropdown-toggle ${pathname.includes("/case-studies/") ? "active-route" : ""}`}
+                className={`nav-link dropdown-toggle ${
+                  pathname.includes("/case-studies/") ? "active-route" : ""
+                }`}
                 href="#"
                 data-bs-toggle="dropdown"
               >
                 Case Studies
-            <span><RxCaretDown /></span>     
+                <span>
+                  <RxCaretDown />
+                </span>
               </a>
               <div className="dropdown-menu shadow">
                 <div className="mega-content p-4">
