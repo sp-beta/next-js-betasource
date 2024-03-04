@@ -112,6 +112,24 @@ function Navbar() {
             >
               About
             </a>
+            <a
+              href="/blog"
+              className={`nav-item nav-link ${
+                pathname == "/blog" ? "active-route" : ""
+              }`}
+              onClick={handleDropdownItemClick}
+            >
+              Blog
+            </a>
+            <a
+              href="/portfolio"
+              className={`nav-item nav-link ${
+                pathname == "/portfolio" ? "active-route" : ""
+              }`}
+              onClick={handleDropdownItemClick}
+            >
+              Portfolio
+            </a>
             <div className="nav-item dropdown dropdown-mega position-static">
               <a
                 className={`nav-link dropdown-toggle ${

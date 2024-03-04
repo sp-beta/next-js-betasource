@@ -107,11 +107,35 @@ function Footer() {
               </Link>
               <Link
                 className={`btn btn-link text-white ${
+                  pathname == "/blog" ? "active-route" : " "
+                }`}
+                href="/blog"
+              >
+                Blog
+              </Link>
+              <Link
+                className={`btn btn-link text-white ${
                   pathname == "/contact" ? "active-route" : " "
                 }`}
                 href="/contact"
               >
                 Contact Us
+              </Link>
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/career" ? "active-route" : " "
+                }`}
+                href="/career"
+              >
+                Career
+              </Link>
+              <Link
+                className={`btn btn-link text-white ${
+                  pathname == "/portfolio" ? "active-route" : " "
+                }`}
+                href="/portfolio"
+              >
+                Portfolio
               </Link>
             </div>
             <div className="col-lg-3 col-md-6 ps-2">
