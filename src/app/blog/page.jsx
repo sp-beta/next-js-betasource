@@ -1,9 +1,8 @@
 import CategoryList from "@/components/CategoryList";
-import Pagination from "@/components/Pagination";
 import BlogMenu from "@/components/blog-menu";
 import BlogPostCardList from "@/components/blogpost-card-list";
 import PageHeading from "@/components/pageheading";
-
+import Pagination from "@/components/pagination-component";
 function Blog() {
   return (
     <div>
@@ -47,7 +46,7 @@ function Blog() {
         </div>
       </div>
       <div className="pagination-section">
-        <Pagination />
+      <Pagination></Pagination>
       </div>
     </div>
   );

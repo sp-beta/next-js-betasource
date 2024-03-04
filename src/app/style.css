@@ -4686,8 +4686,6 @@ margin-bottom: 5px;
 .mostpopularimg {
   width: 200px;
   height: 80px;
-  /* border-radius: 50%;
-  border: 2px solid grey; */
   overflow: hidden;
 }
 
@@ -4724,4 +4722,26 @@ margin-bottom: 10px;
 .pagination-section{
   display: flex;
   justify-content: center;
+}
+.blogpagetitle{
+font-weight: 800 !important
+}
+.blogpagehero .blogpagedetails{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+.blogpagehero .blogpagedetails .date{
+   color: #00000080;
+}
+.blogpagecontent{
+  margin-top: 50px;
+}
+.pagination-section .pagination .page-item .page-link{
+  color: white !important;
+  background-color: var(--primary)
+}
+.pagination-section .pagination .page-item .page-link:hover{
+ background-color: var(--secondary) !important;
 }

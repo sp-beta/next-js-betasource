@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import image from "../../public/home/ai.webp";
-import CategoryList from "./CategoryList";
 function BlogMenu() {
   return (
     <div>
@@ -14,7 +13,7 @@ function BlogMenu() {
         <div className="mostpopularimg">
           <Image src={image} />
         </div>
-        <Link href="/blog">
+        <Link href="/blog/blogpostname">
           <span className="ai-ml card-category">AI/ML</span>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -27,7 +26,7 @@ function BlogMenu() {
         <div className="mostpopularimg">
           <Image src={image} />
         </div>
-        <Link href="/blog">
+        <Link href="/blog/blogpostname">
           <span className="ai-ml card-category">AI/ML</span>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -40,7 +39,7 @@ function BlogMenu() {
         <div className="mostpopularimg">
           <Image src={image} />
         </div>
-        <Link href="/blog">
+        <Link href="/blog/blogpostname">
           <span className="ai-ml card-category">AI/ML</span>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.

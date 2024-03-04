@@ -22,7 +22,7 @@ function SigleBlogCard() {
               saepe nobis quidem officia doloremque quia, beatae alias est
               voluptate corrupti?
             </p>
-            <Link href="/blog">Read More</Link>
+            <Link href="/blog/software">Read More</Link>
           </div>
         </div>
       </div>
