@@ -12,14 +12,15 @@ function CategoryList() {
           <div className="categoryitem devops">DevOps</div>
         </div>
         <div className="col-lg-2 col-sm-4 col-4">
+          <div className="categoryitem cyber">Cyber Security</div>
+        </div>
+        <div className="col-lg-2 col-sm-4 col-4">
           <div className="categoryitem cloud">Cloud</div>
         </div>
         <div className="col-lg-2 col-sm-4 col-4">
           <div className="categoryitem blockchain">Blockchain</div>
         </div>
-        <div className="col-lg-2 col-sm-4 col-4">
-          <div className="categoryitem cyber">Cyber Security</div>
-        </div>
+        
       </div>
     </div>
   );

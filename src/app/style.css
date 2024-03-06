@@ -4577,7 +4577,35 @@ video {
 /********************************** Tanks you page / 404 End********************************/
 
 /* Blog Page============================= */
-
+@media only screen and (max-width: 426px) {
+    .categoryitem{
+      margin-top: 15px;
+    }
+    .blogcontent{
+      margin-top: 70px !important;
+    }
+    .date-category {
+      margin-top: 15px;
+    }
+    .most-popular-card {
+      gap: 1rem !important;
+    }
+    .blogpagehero .blogpagedetails .date{
+      margin-top: 15px;
+    }
+    .blogmenutitle {
+      margin-top: 10px;
+    }
+    .blogpagecontent {
+      margin-top: 20px !important;
+    }
+    .blogpagetitle-container{
+      margin-bottom: 20px !important;
+    }
+}
+.category-menu .categoryitem{
+  margin-top: 0px !important;
+}
 .categoryitem {
   border-radius: 10px;
   background-color: #00b4be5e;
@@ -4673,10 +4701,10 @@ margin-bottom: 5px;
   margin-bottom: 30px;
 }
 .most-popular-card{
-  padding: 15px 10px;
+  padding: 15px 5px;
   border-radius: 15px;
   display: flex;
-  gap: 1rem;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -4718,13 +4746,15 @@ align-items: flex-start;
 gap: 4px;
 margin-bottom: 10px;
 }
-
+.blog-section .blogpagehero h1{
+  font-weight: 700 !important;
+  font-size: calc(1.375rem + 1.5vw);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.089);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
 .pagination-section{
   display: flex;
   justify-content: center;
-}
-.blogpagetitle{
-font-weight: 800 !important
 }
 .blogpagehero .blogpagedetails{
   display: flex;
@@ -4738,10 +4768,21 @@ font-weight: 800 !important
 .blogpagecontent{
   margin-top: 50px;
 }
+.blog-menu-container{
+  background-color: rgba(60, 57, 57, 0.045);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .pagination-section .pagination .page-item .page-link{
   color: white !important;
   background-color: var(--primary)
 }
 .pagination-section .pagination .page-item .page-link:hover{
  background-color: var(--secondary) !important;
+}
+.blogpagetitle-container{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(60, 57, 57, 0.045);
+  border-radius: 10px;
 }

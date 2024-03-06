@@ -8,10 +8,9 @@ function SingeBlogPage() {
       <PageHeading text="Blog category" category="Blog" categorypath="/blog" />
       <div className="container blog-section ">
         <div className="row blogpagehero">
-          <div className="col-lg-6">
+          <div className="col-lg-6 blogpagetitle-container">
             <h1 className="blogpagetitle">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-              officiis illum inventore?
+              Ready to Dive Into The World Of Artificial Intelligence? Here Is what you Need. 
             </h1>
             <div className="blogpagedetails">
               <div className="categoryitem software ">Software</div>
@@ -62,13 +61,13 @@ function SingeBlogPage() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 blog-menu-container">
             <BlogMenu />
           </div>
         </div>
       </div>
       <div className="pagination-section">
-        
+        Pagination component
       </div>
     </>  
   );

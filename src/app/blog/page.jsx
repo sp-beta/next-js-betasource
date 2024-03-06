@@ -1,8 +1,7 @@
-import CategoryList from "@/components/CategoryList";
 import BlogMenu from "@/components/blog-menu";
 import BlogPostCardList from "@/components/blogpost-card-list";
+import CategoryList from "@/components/categoryList";
 import PageHeading from "@/components/pageheading";
-import Pagination from "@/components/pagination-component";
 function Blog() {
   return (
     <div>
@@ -32,21 +31,21 @@ function Blog() {
           </p>
         </div>
       </div>
-      <CategoryList />
+      <CategoryList/>
       <div className="blogcontent">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
               <BlogPostCardList />
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 blog-menu-container">
               <BlogMenu />
             </div>
           </div>
         </div>
       </div>
       <div className="pagination-section">
-      <Pagination></Pagination>
+      Pagination component
       </div>
     </div>
   );
